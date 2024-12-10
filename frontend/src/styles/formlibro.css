@@ -1,0 +1,87 @@
+/* src/styles/formlibro.css */
+.formlibro-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
+.formlibro-form-container {
+    width: 600px; /* Ajusta el ancho del formulario */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.formlibro-form-container h1, .formlibro-form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.formlibro-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formlibro-form-container label {
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.formlibro-form-container input, .formlibro-form-container select, .formlibro-form-container textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.formlibro-form-container input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.formlibro-form-container input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.formlibro-form-container .form-group {
+    margin-bottom: 16px;
+}
+
+.formlibro-form-container .form-group label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.formlibro-form-container .form-group select {
+    width: 100%;
+}
+
+.formlibro-form-container .form-group textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+}
+
+.formlibro-form-container .error-message {
+    color: red;
+    margin-top: 8px;
+}

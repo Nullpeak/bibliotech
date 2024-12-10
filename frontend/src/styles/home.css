@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.libro-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px; /* Espacio entre los libros */
+    margin-top: 20px; /* Espacio adicional en la parte superior */
+}
+
+.libro-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    background-color: #fff;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px; /* Altura fija para las tarjetas */
+    max-width: 250px; /* Ancho máximo para las tarjetas */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente */
+    position: relative; /* Añadido para posicionar el indicador de stock */
+}
+
+.libro-card:hover {
+    transform: scale(1.05);
+}
+
+.libro-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    height: 280px; /* Ajusta la altura de las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+.libro-card h3 {
+    margin: 0;
+    font-size: 1.2em; /* Ajusta el tamaño del título */
+    flex: 1;
+    overflow: hidden; /* Oculta el desbordamiento */
+    white-space: normal; /* Permite que el texto se rompa en varias líneas */
+    display: -webkit-box;
+}
+
+.libro-card h6 {
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.libro-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Ajusta el padding de los botones */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px; /* Ajusta el tamaño del texto de los botones */
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.libro-card button:hover {
+    background-color: #0056b3;
+}
+
+.crear-libro-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.crear-libro-button:hover {
+    background-color: #218838;
+}
+
+.search-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.stock-indicator {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.stock-available {
+    background-color: green;
+    display: inline-block; /* Asegura que el span tenga un tamaño */
+    width: 12px; /* Asegura que el span tenga un tamaño */
+    height: 12px; /* Asegura que el span tenga un tamaño */
+}
+
+.stock-unavailable {
+    background-color: red;
+    display: inline-block; /* Asegura que el span tenga un tamaño */
+    width: 12px; /* Asegura que el span tenga un tamaño */
+    height: 12px; /* Asegura que el span tenga un tamaño */
+}

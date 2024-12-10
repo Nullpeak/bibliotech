@@ -1,0 +1,18 @@
+.libro {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.libro h3 {
+    margin: 0;
+}
+
+.libro p {
+    margin: 5px 0;
+}
+
+.libro button {
+    margin-top: 10px;
+}
+
